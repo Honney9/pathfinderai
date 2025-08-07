@@ -10,7 +10,7 @@ export default defineConfig({
     // Proxy API requests to backend during development
     proxy: {
       '/api': {
-        target: `${VITE_API_URL}`,
+        target: `${VITE_API_BASE_URL}`,
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       }
