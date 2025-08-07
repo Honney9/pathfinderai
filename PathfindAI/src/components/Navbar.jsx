@@ -12,7 +12,7 @@ const Navbar = () => {
               <TrendingUp className="w-7 h-7 text-white" />
             </div>
             <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              PathfindAI
+              PathfinderAI
             </h1>
           </div>
           <p className="text-xl text-gray-600">Your AI-powered career intelligence platform</p>
