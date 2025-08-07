@@ -1,7 +1,7 @@
 import React from "react";
 
 const RecommendationDisplay = ({ profile, location, recommendation, marketStats, roadmap }) => {
-  console.log(recommendation)
+ 
   return (
     <div className="bg-white shadow-xl p-8 rounded-2xl space-y-6">
       {/* Career Title */}

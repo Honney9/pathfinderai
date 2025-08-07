@@ -261,7 +261,7 @@ const CareerPathwayAdvisor = () => {
                       openings: recommendations.recommendations.market_stats?.openings,
                       topCompanies: recommendations.recommendations.market_stats?.top_companies,
                     }}
-                    roadmap={recommendations.roadmap}
+                    roadmap={recommendations.recommendations.roadmap}
                   />
                 </div>
               </div>
