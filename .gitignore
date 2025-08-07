@@ -1,2 +1,7 @@
 PathfindAI/.env
-backend/ .env
+PathfindAI/node_modules
+
+backend/.env
+venv/
+__pycache__/
+*.pyc
