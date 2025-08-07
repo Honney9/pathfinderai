@@ -53,7 +53,7 @@ const CareerPathwayAdvisor = () => {
     return (
       <div className="min-h-screen bg-gray-50 py-8">
         <div className="max-w-4xl mx-auto px-4">
-          
+
           {/* Profile Form */}
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="text-center mb-8">
@@ -168,7 +168,7 @@ const CareerPathwayAdvisor = () => {
               {/* Time Commitment */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-4">
-                  Time Commitment for Learning
+                  Time Commitment for Working
                 </label>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {[
