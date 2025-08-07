@@ -3,7 +3,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import Optional, List
 from agent import generate_recommendations
+from dotenv import load_dotenv
+import os
 import logging
+
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -16,10 +20,12 @@ app = FastAPI(
     version="1.0.0"
 )
 
+vite_link = os.getenv("VITE_LINK")
+
 # CORS middleware - Allow all origins for development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, specify your frontend URL
+    allow_origins=[f"{vite_link}", "http://localhost:5173"],  # In production, specify your frontend URL
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allow_headers=["*"],
