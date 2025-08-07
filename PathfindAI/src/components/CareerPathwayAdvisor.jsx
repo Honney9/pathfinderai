@@ -42,8 +42,6 @@ const CareerPathwayAdvisor = () => {
     
     try {
       const result = await submitProfile(formData);
-      console.log("submitProfile called"); // ✅ Add this
-      console.log('Recommendations received:', result);
       handleNext(); // Move to recommendations step
     } catch (err) {
       console.error('Submission failed:', err);
@@ -54,7 +52,8 @@ const CareerPathwayAdvisor = () => {
   if (currentStep === 1) {
     return (
       <div className="min-h-screen bg-gray-50 py-8">
-      
+        <div className="max-w-4xl mx-auto px-4">
+          
           {/* Profile Form */}
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="text-center mb-8">
@@ -228,6 +227,7 @@ const CareerPathwayAdvisor = () => {
             </form>
           </div>
         </div>
+      </div>
     );
   }
 
