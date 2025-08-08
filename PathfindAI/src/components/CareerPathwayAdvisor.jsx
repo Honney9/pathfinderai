@@ -267,19 +267,43 @@ const CareerPathwayAdvisor = () => {
               </div>
             </div>
 
-            <div className="flex justify-between mt-8">
+            <div className="flex justify-between mt-8 pt-6 border-t border-gray-200">
               <button
                 onClick={handlePrevious}
-                className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50"
+                className="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 flex items-center"
               >
-                ← Back to Profile
+                ← Back to Skills
               </button>
-              <button
-                onClick={() => window.location.reload()}
-                className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-              >
-                Start Over
-              </button>
+              <div className="flex space-x-4">
+                <button
+                  onClick={() => window.print()}
+                  className="group relative inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition duration-200 shadow-sm hover:shadow-md"
+                >
+                  <svg
+                    className="w-5 h-5 transition-transform duration-200 group-hover:scale-110"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"
+                    />
+                  </svg>
+                  <span className="font-medium">Print Report</span>
+                </button>
+                <button
+                  onClick={() => window.location.reload()}
+                  className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 flex items-center"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                  New Analysis
+                </button>
+              </div>
             </div>
           </div>
         </div>
